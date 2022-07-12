@@ -11,69 +11,91 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
       <nav class="navbar">
         <div class="container">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Discover</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">My Plants</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Diseases</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Blog</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">FAQ</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Contact Us</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Discover</a>
-            </li>
-            <li class="navbar-item">
-              <a class="navbar-link" href="#">Discover</a>
-            </li>
-          </ul>
+          <div class="navbar-inner">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Discover</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">My Plants</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Diseases</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Blog</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">FAQ</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="navbar-user">
+              <button class="btn">
+                <i class="fa fa-search" aria-hidden="true"></i></button
+              ><button class="btn">
+                <i class="fas fa-user-circle"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
-    <section class="">
-      <div class="container">
-        <ul class="">
-          <li class="">
-            <a href="#">Home</a>
-          </li>
-          <li class="">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+    <div class="container">
+      <ul class="breadcrumps">
+        <li class="breadcrups-item">
+          <a class="breadcrumps-link" href="#">Home</a>
+        </li>
+        <li class="breadcrups-item">
+          <a class="breadcrumps-link" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="banner">
+        <h2 class="banner-heading text--green">
+          Stay always tuned with planting trends
+        </h2>
+        <h4 class="text--black">Current temperature is: 24°C</h4>
+        <form class="form" action="">
+          <div class="input">
+            <input class="input-value" placeholder="Search" type="text" />
+            <i class="fas fa-search"></i>
+          </div>
+        </form>
+        <img class="banner-post-image" src="images/girl.png" alt="girl" />
       </div>
-    </section>
+    </div>
     <section class="section section-new">
       <div class="container">
-        <div class="post-list">
+        <div class="budget budget--orange">
+          <p class="typography typography--body2">New</p>
+        </div>
+        <div class="post-list post-list--lg">
           <div class="post-item">
-            <div class="batget batget--orange">
-              <p class="typography">New</p>
-            </div>
             <div class="post-image-wrapper">
-              <img class="post-image" src="images/soil1.png" alt="soil" />
+              <img class="post-image" src="images/1.jpg" alt="soil" />
             </div>
             <div class="post-content">
               <p class="typography typography--body2">Feb 23 · 8 min read</p>
-              <h1 class="typography typography--h1">
+              <h1 class="typography typography--h1 text--black">
                 Tips & Tricks For Cutting
               </h1>
-              <p class="typography typography--body2">
+              <p class="typography typography--body2 text--grey">
                 Pruning, like any other skill, requires knowing what you are
                 doing to achieve success. The old idea that anyone with a chain
                 saw or a pruning saw can be a landscape pruner is far from the
@@ -82,23 +104,24 @@
                 or...
               </p>
             </div>
-            <hr class="line" size="1px" width="1000px" />
           </div>
         </div>
       </div>
     </section>
     <section class="section post-section">
       <div class="container">
-        <h4 class="typography typography--h4 upper">TOP of the Day</h4>
-        <div class="post-list">
+        <h2 class="typography typography--h2 upper">TOP of the Day</h2>
+        <div class="post-list post-list--md">
           <div class="post-item">
             <div class="post-image-wrapper">
-              <img class="post-image" src="images/soil1.png" alt="" />
+              <img class="post-image" src="images/2.jpg" alt="img" />
             </div>
             <div class="post-content">
               <p class="typography typography--body2">Feb 23 · 8 min read</p>
-              <h2 class="typography typography--h2">Professional Repot</h2>
-              <p class="typography typography--body2">
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
                 Repotting a plant can seem like a difficult task because a lot
                 of things can go wrong – you can damage...
               </p>
@@ -106,168 +129,227 @@
           </div>
           <div class="post-item">
             <div class="post-image-wrapper">
-              <img class="post-image" src="images/soil1.png" alt="" />
+              <img class="post-image" src="images/2.jpg" alt="img" />
             </div>
             <div class="post-content">
               <p class="typography typography--body2">Feb 23 · 8 min read</p>
-              <h2 class="typography typography--h2">Professional Repot</h2>
-              <p class="typography typography--body2">
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
                 Repotting a plant can seem like a difficult task because a lot
                 of things can go wrong – you can damage...
               </p>
             </div>
           </div>
-          <hr class="line" size="1px" width="1000px" />
         </div>
       </div>
     </section>
     <section class="section section-interesting">
       <div class="container">
         <h2 class="typography typography--h2 upper">Interesting</h2>
-        <div class="post-list">
+        <div class="post-list post-list--sm">
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Watering mastery</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Watering mastery
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Plant pot secrets</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Plant pot secrets
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Professional Repot</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Watering mastery</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Watering mastery
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Plant pot secrets</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Plant pot secrets
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/particle.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/3.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Professional Repot</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="post-content">
+    <div class="container">
+      <div class="banner">
+        <h2 class="text--green">Get unlimited access to exclusive articles</h2>
+        <h4 class="text--black">
+          Get rid of limits and read everything you wish
+        </h4>
+        <img class="banner-post-image" src="images/girl2.png" alt="girl" />
+      </div>
+      <button class="btn btn--primary">Try For Free</button>
+    </div>
+    <section class="section-content">
       <div class="container">
-        <div class="post-list">
+        <div class="post-list post-list--sm">
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Plant pot secrets</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Plant pot secrets
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Professional Repot</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Watering mastery</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Watering mastery
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Professional Repot</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Professional Repot
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Watering mastery</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Watering mastery
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
           <div class="post-item">
-            <div class="gallery-item">
-              <img class="image" src="images/image.png" alt="img" />
+            <div class="post-image-wrapper">
+              <img class="post-image" src="images/4.jpg" alt="img" />
             </div>
-            <p class="typography typography--body2">Feb 23 · 8 min read</p>
-            <h2 class="typography typography--h2">Plant pot secrets</h2>
-            <p class="typography typography--body2">
-              Repotting a plant can seem like a difficult task because a lot of
-              things can go wrong – you can damage...
-            </p>
+            <div class="post-content">
+              <p class="typography typography--body2">Feb 23 · 8 min read</p>
+              <h3 class="typography typography--h3 text--black">
+                Plant pot secrets
+              </h3>
+              <p class="typography typography--body2 text--grey">
+                Repotting a plant can seem like a difficult task because a lot
+                of things can go wrong – you can damage...
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div>
+    <footer class="container">
+      <div class="post-link">
         <a class="link" href="#">Terms of Service</a>
         <a class="link" href="#">Privacy Policy</a>
         <a class="link" href="#">Subscription Policy</a>
